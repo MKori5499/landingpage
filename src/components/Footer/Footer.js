@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css'; 
-
+import facebook from "../../assets/fb.png"
+import x from "../../assets/tw.png"
+import linkedin from "../../assets/li.png"
 const Footer = () => {
   return (
     <footer className="footer-container">
@@ -56,9 +58,9 @@ const Footer = () => {
         </div>
         <p>©2021 Whitepace LLC.</p>
         <div className="social-icons">
-          <a href="/"><img src="facebook-icon.png" alt="Facebook" /></a>
-          <a href="/"><img src="twitter-icon.png" alt="Twitter" /></a>
-          <a href="/"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+          <a href="/"><img src={facebook} alt="Facebook" /></a>
+          <a href="/"><img src={x} alt="Twitter" /></a>
+          <a href="/"><img src={linkedin} alt="LinkedIn" /></a>
         </div>
       </div>
     </footer>
