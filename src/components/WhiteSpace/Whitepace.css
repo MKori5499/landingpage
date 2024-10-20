@@ -1,0 +1,65 @@
+.whitepace-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0D3D72; 
+    color: white;
+    padding: 50px;
+    height: 60vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .cta-button {
+    background-color: #2A7DE1; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #1C5DB3;
+  }
+  
+  .platform-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .platform-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    .cta-button {
+      padding: 12px 24px;
+      font-size: 1em;
+    }
+  
+    .platform-icons img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

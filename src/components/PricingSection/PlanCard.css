@@ -1,0 +1,96 @@
+.plan-card {
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left; 
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+  background-color: white;
+  color: black;
+  
+}
+
+.plan-card h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: black;
+}
+
+.plan-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plan-card ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.plan-card ul li:before {
+  content: '✔️'; 
+  margin-right: 10px;
+  color: #28a745; 
+}
+
+.get-started-btn {
+  background-color: #f7d060;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.plan-card.highlighted {
+  background-color: #0D3D72; 
+}
+
+.plan-card.highlighted h1,
+.plan-card.highlighted ul li {
+  color: white; 
+}
+
+.plan-card.highlighted ul li:before {
+  color: #f7d060; 
+}
+
+.plan-card:hover {
+  background-color: #0D3D72; 
+  color: white;
+  transform: scale(1.05); 
+}
+
+.plan-card:hover h1,
+.plan-card:hover ul li {
+  color: white; 
+}
+
+.plan-card:hover ul li:before {
+  color: #f7d060; 
+}
+
+.plan-card:not(:hover) {
+  background-color: white; 
+}
+
+.plan-card:not(:hover) h1,
+.plan-card:not(:hover) ul li {
+  color: black; 
+}
+
+.plan-card:not(:hover) ul li:before {
+  color: #28a745; 
+}
+
+.plan-card h1,
+.plan-card ul li {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .plan-card {
+    margin-bottom: 20px;
+  }
+}
